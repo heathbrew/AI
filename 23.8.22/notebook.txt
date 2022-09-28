@@ -1,3 +1,0 @@
-dataset link
-
-https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv
