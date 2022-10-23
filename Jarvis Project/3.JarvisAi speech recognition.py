@@ -1,7 +1,7 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
-#import pyaudio
+import pyaudio
 import wikipedia
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
@@ -36,7 +36,7 @@ def takeCommand():
         #print("User said: {query}\n")
         print("User said: {}\n".format(query))
     except Exception as e:
-        #print(e)
+        print(e)
         print("Say that again please")
         return "None"
     return query
@@ -49,11 +49,11 @@ if __name__=="__main__":
         if "wikipedia" in query:
             speak("Searching Wikipedia...")
             query = query.replace("wikipedia","")
-            results = wikipedia.summary(query,sentences=2)
+            results = wikipedia.summary(query,sentences=3)
             speak("According to Wikipedia:")
             print(results)
             speak(results)
-        if "stop" in query:
-            query = query.replace("stop")
+        elif "stop" in query:
+            speak("stopping now")
             break
     
