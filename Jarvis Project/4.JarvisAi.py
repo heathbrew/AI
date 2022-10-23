@@ -57,6 +57,7 @@ if __name__=="__main__":
             speak("According to Wikipedia:")
             print(results)
             speak(results)
+            break
         elif "stop" in query:
             speak("stopping now")
             break
@@ -69,6 +70,7 @@ if __name__=="__main__":
         elif "open github" in query:
             speak("opening github...")
             wb.open("https://github.com/heathbrew?tab=repositories")
+            break
         elif "play music" in query:
             if "study" in query:
                 wb.open("https://music.youtube.com/watch?v=8EeNI0cts4Y&list=PL8uQl6bqhtpP46cpIpBvFLfMV7bltP81h")
@@ -105,3 +107,7 @@ if __name__=="__main__":
             wb.open(javacompiler)
             wb.open("https://music.youtube.com/watch?v=b-I8F0aUGiw&list=PL8uQl6bqhtpP46cpIpBvFLfMV7bltP81h")
             break
+        elif "whatsapp" in query:
+            wlink = "https://web.whatsapp.com/"
+            wb.open(wlink)
+        
