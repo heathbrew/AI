@@ -110,4 +110,11 @@ if __name__=="__main__":
         elif "whatsapp" in query:
             wlink = "https://web.whatsapp.com/"
             wb.open(wlink)
-        
+    #C:\Users\ACER\PycharmProjects\pythonProject
+    #"D:\PyCharm Community Edition 2022.2.3\bin\pycharm64.exe"
+        elif "pycharm" in query :
+            pydir = "C:\\Users\\ACER\\PycharmProjects\\pythonProject"
+            pycharm = "D:\\PyCharm Community Edition 2022.2.3\\bin\\pycharm64.exe"
+            os.startfile(pydir)
+            os.startfile(pycharm)
+            break
