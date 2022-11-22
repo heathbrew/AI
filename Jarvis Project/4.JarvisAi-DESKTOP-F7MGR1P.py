@@ -82,7 +82,14 @@ if __name__=="__main__":
         #     strDay = datetime.datetime.now().strftime("%A")
         #     speak(f"Sir, the date today is {strDate}.")
         #     speak(f"and the day today is {strDay}")
-        
+        elif "open dragon ball" in query:
+            dragonballpath = "steam://rungameid/851850"
+            os.startfile(dragonballpath)
+            break
+        elif "open gotham knights" in query:
+            dragonballpath = "steam://rungameid/1496790"
+            os.startfile(dragonballpath)
+            break
         elif "open ai" in query:
             AIpath = "C:\\Users\\Admin\\OneDrive\\Desktop\AI"
             os.startfile(AIpath)
@@ -99,14 +106,16 @@ if __name__=="__main__":
             wb.open(javacompiler)
             wb.open("https://music.youtube.com/watch?v=b-I8F0aUGiw&list=PL8uQl6bqhtpP46cpIpBvFLfMV7bltP81h")
             break
-        elif "login stud" in query:
+        elif "login stud hp" in query:
             speak("you have 10 sec to select stud wifi")
             pyautogui.sleep(3)
             wb.open("http://10.40.0.1/24online/webpages/client.jsp")
             pyautogui.sleep(10)
-            pyautogui.click(545,527)
+            pyautogui.moveTo(423, 425)
+            pyautogui.click(423,425)
             pyautogui.write("e21cseu0245")
-            pyautogui.click(565,568)
+            pyautogui.moveTo(423, 425)
+            pyautogui.click(435,458)
             pyautogui.write("3Cd$5Ul#")
             pyautogui.press("enter")
         elif  "open lms" in query:
@@ -118,16 +127,5 @@ if __name__=="__main__":
             pyautogui.write("3Cd$5Ul#")
             pyautogui.press("enter")
             break
-#apps
-        elif "open dragon ball" in query:
-            dragonballpath = "steam://rungameid/851850"
-            os.startfile(dragonballpath)
-            break
-        elif "open gotham knights" in query:
-            dragonballpath = "steam://rungameid/1496790"
-            os.startfile(dragonballpath)
-            break
-        elif "open pycharm " in query:
-            pycharmpath = "D:\\PyCharm Community Edition 2022.2.3\\bin\\pycharm64.exe"
-            os.startfile(pycharmpath)
+            
             
